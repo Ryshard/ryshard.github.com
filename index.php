@@ -11,7 +11,7 @@ echo '</head>' . PHP_EOL;
 echo '<body>';
 
 echo '<h1> PHP TEST </h1>';
-echo '<h2> Auto Deploy Test 2</h2>' . PHP_EOL;
+echo '<h2> Auto Deploy Test 3</h2>' . PHP_EOL;
 
 
 echo '</body>';
