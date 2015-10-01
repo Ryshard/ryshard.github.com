@@ -11,6 +11,7 @@ echo '</head>' . PHP_EOL;
 echo '<body>';
 
 echo '<h1> PHP TEST </h1>';
+echo '<h2> Branch Test </h2>' . PHP_EOL;
 
 
 echo '</body>';
