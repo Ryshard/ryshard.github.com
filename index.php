@@ -1,4 +1,17 @@
 <?php
+echo '<!DOCTYPE html>' . PHP_EOL;
+echo '<html>';
+
+echo '<head>' . PHP_EOL;
+
+echo '<meta charset="UTF-8">';
+
+echo '</head>' . PHP_EOL;
+
+echo '<body>';
+
+echo '<h1> PHP TEST </h1>';
 
 
-echo "<h1> TEST <h1>";
+echo '</body>';
+echo '</html>';
