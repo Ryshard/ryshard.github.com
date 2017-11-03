@@ -4,11 +4,11 @@ body {
 	padding: 0; 
 	background-color: #dedede;
 	color: white;
+	font-family: "Trebuchet", Helvetica, Arial, Sans-serif;
 }
 
 
 h1 { 
-	font-size: 30px; 
-	font-family: "Trebuchet", Helvetica, Arial, Sans-serif;
+	font-size: 30px;
 }
 
