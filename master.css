@@ -2,6 +2,8 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0; 
+	background-color: #dedede;
+	color: white;
 	font-family: "Trebuchet", Helvetica, Arial, Sans-serif;
 }
 
