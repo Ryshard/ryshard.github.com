@@ -2,11 +2,11 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0; 
+	font-family: "Trebuchet", Helvetica, Arial, Sans-serif;
 }
 
 
 h1 { 
-	font-size: 30px; 
-	font-family: "Trebuchet", Helvetica, Arial, Sans-serif;
+	font-size: 30px;
 }
 
