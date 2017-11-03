@@ -4,4 +4,9 @@ body {
 	padding: 0; 
 }
 
-h1 { font-size: 30px; }
+
+h1 { 
+	font-size: 30px; 
+	font-family: "Trebuchet", Helvetica, Arial, Sans-serif;
+}
+
