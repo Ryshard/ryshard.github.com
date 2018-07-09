@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, "Calibri", Arial, sans-serif;
+        }
+    main {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
+        padding: 20px;
+    }
+    .top-nav {
+        padding: 30px;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: #999999;
+    }
+
+    .top-nav a {
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    footer {
+        width: 100%;
+        display: block;
+        position:relative;
+        background: olive;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        font-size: 24px;
+    }
+
+    .cta {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 220px;
+    }
+    .cta button {
+        display: block;
+        margin: 40px 20px;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="top-nav">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+        </nav>  
+        <div class="content">
+            <h2>New Title</h2>
+            <input type="text" id="newTitle" />
+            <button id="setTitle">New Title</button>
+        </div>
+
+        <div class="cta">
+            <h1 id="myTitle">One Line</h1>
+            <button class="first">Here</button>
+            <button class="second">There</button>
+        </div>
+    </main>
+    <footer>
+The Footer
+    </footer>
+
+    <script>
+    var input = document.getElementById('newTitle');
+    var btn = document.getElementById('setTitle');
+    var title = document.getElementById('myTitle');
+
+    btn.addEventListener('click', function(){
+        var text = input.value;
+        title.innerHTML = text;
+    }); 
+    </script>
+</body>
+</html>
