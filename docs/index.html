@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gabriel garus</title> <meta name="description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development"> <meta name="identifier-url" content="http://localhost:4000" /> <meta name="robots" content="noindex,follow" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Open Graph --> <meta property="og:locale" content="en" /> <meta property="og:type" content="website" /> <meta property="og:title" content="Gabriel garus" /> <meta property="og:description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development" /> <meta property="og:url" content="http://localhost:4000/" /> <meta property="og:site_name" content="Gabriel garus" /> <meta property="og:image" content="http://localhost:4000/img/facebook-preview.jpg"> <meta property="og:image:type" content="image/jpeg" /> <meta property="og:image:width" content="1200" /> <meta property="og:image:height" content="630" /> <link rel="stylesheet" href="css/stylus.css" /> <!-- Twitter --> <meta name="twitter:card" content="summary_large_image" /> <meta name="twitter:title" content="Gabriel garus" /> <meta name="twitter:image" content="http://localhost:4000/img/facebook-preview.jpg" /> <meta name="twitter:description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development" /> <meta name="twitter:site" content="@" /> <meta name="twitter:creator" content="@" /> </head>
+<body>
+<header class="main-header">
+  <div class="content">
+    <h1>gabriel garus</h1>
+    <h2>- the front-end wizard</h2>
+    <div class="js-magic-ball ball"></div>
+  </div>
+  
+</header>
+
+<main class="main-content">
+<div class="content"> <h2>Expertise:</h2> <ul class="expertise main"> <li> <div class="expertise-item"> <button>JavaScript <span class="chevron bottom"></span></button> <div class="item-info"> <ul> <li>React / redux</li> <li>Vanilla</li> <li>jQuery</li> </ul> </div> <div class="ball"></div> </div> </li> <li> <div class="expertise-item"> <button>HTML / CSS <span class="chevron bottom"></span></button> <div class="item-info"> <ul> <li>scss / sass - css pre-processor</li> <li>Jekyll - static html generator</li> <li>css3 / html5 best practices</li> </ul> </div> <div class="ball"></div> </div> </li> <li> <div class="expertise-item"> <div class="ball last"></div> <button>WordPress <span class="chevron bottom"></span></button> <div class="item-info"> <ul> <li>custom templates (php)</li> <li>optimisation</li> <li>WooCommerce</li> </ul> </div> <div class="ball"></div> </div> </li> </ul> <br /> <hr /> <br /> <h3>Other:</h3> <ul class="expertise"> <li> <div class="expertise-item"> <button>Automated Testing <span class="chevron bottom"></span></button> <div class="item-info"> <ul> <li>@testing-library/react</li> <li>enzyme.js</li> <li>sinon.js</li> <li>es-lint</li> <li>chai</li> <li>mocha</li> <li>selenium webdriver</li> <li>cucumber</li> </ul> </div> <div class="ball"></div> </div> </li> <li> <div class="expertise-item"> <div class="ball last"></div> <button>Version control <span class="chevron bottom"></span></button> <div class="item-info"> <ul> <li>git (git-flow) / gitHub</li> <li>gitLab</li> </ul> </div> <div class="ball"></div> </div> </li> <li> <div class="expertise-item"> <div class="ball last"></div> <button>CI/CD pipelines <span class="chevron bottom"></span></button> <div class="item-info"> <ul> <li>CircleCi</li> <li>gitLab pages pipeline</li> <li>gitHub pages pipeline</li> <li>AWS CodeDeploy</li> </ul> </div> <div class="ball"></div> </div> </li> <li> <div class="expertise-item"> <div class="ball last"></div> <button>Optimisations <span class="chevron bottom"></span></button> <div class="item-info"> <ul> <li>optimizing react components for best performance</li> <li>optimizing page performance</li> <li>SEO best practices</li> </ul> </div> <div class="ball"></div> </div> </li> </ul> </div>
+</main>
+
+<footer id="theFooter"> <div class="content"> <h3>Contact:</h3> <p itemprop="email">gabriel.garus@protonmail.com</p> <br /><hr /> <nav class="social primary"> <a href="https://ie.linkedin.com/in/gabriel-garus-8891a333" target="_blank" class="linkedin">Linkedin</a> <a href="https://github.com/Ryshard" target="_blank" class="github">GitHub</a> <a href="https://gist.github.com/Ryshard" target="_blank" class="gist">Gist</a> </nav> <br /> <nav class="social primary"> <a href="https://twitter.com/Azaqi" target="_blank" class="twitter">Twitter</a> <a href="https://www.facebook.com/gabriel.garus" target="_blank" class="facebook">Fb</a> <a href="https://www.strava.com/athletes/5574105" target="_blank" class="strava">Strava</a> <a href="http://boinc.netsoft-online.com/e107_plugins/boinc/get_user.php?cpid=33728a38745130c51f53259c56a1fdf3&html=1" target="_blank" class="wow">seti@home</a> </nav> </div> </footer>
+<script>
+  function ffDomLoadedScripts() {
+
+    const expertiseItems = document.querySelectorAll('.expertise-item');
+
+    expertiseItems.forEach((item) => {
+      const btn = item.querySelector('button');
+      const info = item.querySelector('.item-info');
+
+      btn.addEventListener('click', () => {
+        info.classList.toggle('open');
+        item.classList.toggle('open');
+      });
+    });
+
+  }
+
+  document.addEventListener('DOMContentLoaded', ffDomLoadedScripts);
+
+</script>
+</body>
+</html>

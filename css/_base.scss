@@ -1,0 +1,140 @@
+// main
+html, body {
+  overflow-y: visible;
+}
+
+*, *:before, *:after {
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+$bg-color: #fefefe;
+
+body {
+  background-color: $bg-color;
+  color: #666666;
+  font-family: 'Helvetica', 'Calibri', sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+h1, h2 {
+  margin: 0;
+}
+
+.main-header {
+  width: 100%;
+  overflow: visible;
+  max-width: 100%;
+  margin-bottom: $space-l;
+  border-bottom: solid 1px #666;
+  position: relative;
+
+
+  h1 {
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: $space-s;
+    text-align: right;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-align: right;
+  }
+}
+
+.content {
+  padding: $space-s;
+  max-width: 666px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  color: #666666;
+}
+
+.ball {
+  display: block;
+  border: solid 1px #666;
+  width:  30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  left: $space-m;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: $bg-color;
+}
+
+.item-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+  &.open {
+    max-height: 300px;
+    transition: all 0.5s;
+  }
+}
+
+.expertise-item {
+  width: 100%;
+  overflow: visible;
+  border-bottom: dotted 1px #666;
+  border-left: dotted 1px #666;
+  position: relative;
+}
+.expertise-item button {
+  background: transparent;
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  color: #666;
+  padding: $space-s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.expertise-item .ball {
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  z-index: 5;
+  top: 0;
+  bottom: auto;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+}
+.expertise-item.open .ball:not(.last) {
+  transition: all 0.2s;
+  background-color: lighten(#666, 40%);
+}
+
+.ball.last { 
+  top: auto;
+  bottom: 0;
+  transform: translateY(50%);
+}
+.expertise {
+  list-style-type: none;
+  position: relative;
+  padding: 0 10px;
+}
+
+.item-info ul {
+  padding-bottom: $space-s;
+}
+
+.item-info ul li { 
+  padding: $space-xs 0;
+}

@@ -1,10 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Gabriel Garus</title>
-</head>
-<body>
-	<h1>Gabriel Garus</h1>
-</body>
-</html>
+---
+layout: main
+---
+<div class="content">
+  <h2>Expertise:</h2>
+  <ul class="expertise main">
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>React / redux</li>
+        <li>Vanilla</li>
+        <li>jQuery</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="JavaScript" info=itemInfo %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>scss / sass - css pre-processor</li>
+        <li>Jekyll - static html generator</li>
+        <li>css3 / html5 best practices</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="HTML / CSS" info=itemInfo %}
+
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>custom templates (php)</li>
+        <li>optimisation</li>
+        <li>WooCommerce</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="WordPress" info=itemInfo lastBall="true" %}
+    </li>
+  </ul>
+
+  <br />
+  <hr />
+  <br />
+  <h3>Other:</h3>
+  <ul class="expertise">
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>@testing-library/react</li>
+        <li>enzyme.js</li>
+        <li>sinon.js</li>
+        <li>es-lint</li>
+        <li>chai</li>
+        <li>mocha</li>
+        <li>selenium webdriver</li>
+        <li>cucumber</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="Automated Testing" info=itemInfo %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>git (git-flow) / gitHub</li>
+        <li>gitLab</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="Version control" info=itemInfo lastBall="true" %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>CircleCi</li>
+        <li>gitLab pages pipeline</li>
+        <li>gitHub pages pipeline</li>
+        <li>AWS CodeDeploy</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="CI/CD pipelines" info=itemInfo lastBall="true" %}
+    </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>optimizing react components for best performance</li>
+        <li>optimizing page performance</li>
+        <li>SEO best practices</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="Optimisations" info=itemInfo lastBall="true" %}
+    </li>
+  </ul>
+
+</div>

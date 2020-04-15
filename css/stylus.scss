@@ -1,0 +1,9 @@
+---
+# Main stylesheet
+sitemap:
+  exclude: 'yes'
+---
+@import "mixins";
+@import "settings";
+@import "tools";
+@import "base";
