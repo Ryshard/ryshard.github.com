@@ -1,0 +1,32 @@
+{
+  "name": "ryshard",
+  "version": "1.0.0",
+  "description": "Gabriel Garus, guthub user page",
+  "main": "docs/index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "jekyll serve",
+    "install": "bundle install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryshard/ryshard.github.com.git"
+  },
+  "keywords": [
+    "github",
+    "pages",
+    "jekyll",
+    "front-end"
+  ],
+  "author": "Gabriel Garus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryshard/ryshard.github.com/issues"
+  },
+  "homepage": "https://github.com/Ryshard/ryshard.github.com#readme"
+}
