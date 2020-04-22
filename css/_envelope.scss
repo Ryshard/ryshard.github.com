@@ -1,0 +1,46 @@
+$base-size: 40px;
+ 
+.envelope {
+  width:$base-size;
+  height: $base-size * 0.625;
+  border:1px dashed #666;
+  position:relative;
+  -webkit-border-radius: $base-size * 0.025;
+  -moz-border-radius:$base-size * 0.025;
+  border-radius:$base-size * 0.025;
+  overflow:hidden;
+  margin: 0 auto;
+
+ 
+  &:before {
+    border-bottom:1px dashed #666;
+    position:absolute;
+    display:block;
+    content:"";
+    top: $base-size * 0.1575;
+    left: 0 - $base-size * 0.0625;
+    width:$base-size * 0.625;
+    height:1px;
+    -webkit-transform:rotate(35deg);
+    -moz-transform:rotate(35deg);
+    -ms-transform:rotate(35deg);
+    -o-transform:rotate(35deg);
+    transform:rotate(35deg);
+  }
+ 
+  &:after {
+    border-bottom: 1px dashed #666;
+    position: absolute;
+    display: block;
+    content: '';
+    top: $base-size * 0.1575;
+    right: 0 - $base-size * 0.0625;
+    width: $base-size * 0.625;
+    height: 1px;
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+  }
+}
