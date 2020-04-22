@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Gabriel garus</title> <meta name="description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development"> <meta name="identifier-url" content="" /> <meta name="robots" content="noindex,follow" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Open Graph --> <meta property="og:locale" content="en" /> <meta property="og:type" content="website" /> <meta property="og:title" content="Gabriel garus" /> <meta property="og:description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development" /> <meta property="og:url" content="/404/" /> <meta property="og:site_name" content="Gabriel garus" /> <meta property="og:image" content="/img/facebook-preview.jpg"> <meta property="og:image:type" content="image/jpeg" /> <meta property="og:image:width" content="1200" /> <meta property="og:image:height" content="630" /> <link rel="stylesheet" href="css/stylus.css" /> <!-- Twitter --> <meta name="twitter:card" content="summary_large_image" /> <meta name="twitter:title" content="Gabriel garus" /> <meta name="twitter:image" content="/img/facebook-preview.jpg" /> <meta name="twitter:description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development" /> <meta name="twitter:site" content="@" /> <meta name="twitter:creator" content="@" /> </head>
+<title>Gabriel garus</title> <meta name="description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development"> <meta name="identifier-url" content="http://localhost:4000" /> <meta name="robots" content="noindex,follow" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Open Graph --> <meta property="og:locale" content="en" /> <meta property="og:type" content="website" /> <meta property="og:title" content="Gabriel garus" /> <meta property="og:description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development" /> <meta property="og:url" content="http://localhost:4000/404/" /> <meta property="og:site_name" content="Gabriel garus" /> <meta property="og:image" content="http://localhost:4000/img/facebook-preview.jpg"> <meta property="og:image:type" content="image/jpeg" /> <meta property="og:image:width" content="1200" /> <meta property="og:image:height" content="630" /> <link rel="stylesheet" href="css/stylus.css" /> <!-- Twitter --> <meta name="twitter:card" content="summary_large_image" /> <meta name="twitter:title" content="Gabriel garus" /> <meta name="twitter:image" content="http://localhost:4000/img/facebook-preview.jpg" /> <meta name="twitter:description" content="Front end focused developer. Experienced in react/redux environments. Good proficiency in CSS/HTML. Eperience in WordPress development" /> <meta name="twitter:site" content="@" /> <meta name="twitter:creator" content="@" /> </head>
 <body>
 <header class="main-header">
   <div class="content">
@@ -17,22 +17,54 @@
 <style type="text/css" media="screen"> .container { margin: 10px auto; max-width: 600px; text-align: center; } h1 { margin: 30px 0; font-size: 4em; line-height: 1; letter-spacing: -1px; } </style> <div class="container"> <h1>404</h1> <p><strong>Page not found :(</strong></p> <p>The requested page could not be found.</p> </div>
 </main>
 
-<footer id="theFooter"> <div class="content"> <h3>Contact:</h3> <p itemprop="email">gabriel.garus@protonmail.com</p> <br /><hr /> <nav class="social primary"> <a href="https://ie.linkedin.com/in/gabriel-garus-8891a333" target="_blank" class="linkedin">Linkedin</a> <a href="https://github.com/Ryshard" target="_blank" class="github">GitHub</a> <a href="https://gist.github.com/Ryshard" target="_blank" class="gist">Gist</a> </nav> <br /> <nav class="social primary"> <a href="https://twitter.com/Azaqi" target="_blank" class="twitter">Twitter</a> <a href="https://www.facebook.com/gabriel.garus" target="_blank" class="facebook">Fb</a> <a href="https://www.strava.com/athletes/5574105" target="_blank" class="strava">Strava</a> <a href="http://boinc.netsoft-online.com/e107_plugins/boinc/get_user.php?cpid=33728a38745130c51f53259c56a1fdf3&html=1" target="_blank" class="wow">seti@home</a> </nav> </div> </footer>
+<footer id="theFooter"> <div class="content"> <h3>Contact:</h3> <div id="myEmail" class="contact-email"> <a href="mailto:gabriel.garus@protonmail.com" class="email-link"><div class="envelope"></div></a> <p itemprop="email" class="email-text">gabriel.garus@protonmail.com</p> <button class="email-copy" title="copy to clipboard">copy email ( ctrl+c )</button> </div> <br /><hr /> <nav class="social primary"> <a href="https://ie.linkedin.com/in/gabriel-garus-8891a333" target="_blank" class="linkedin">Linkedin</a> <a href="https://github.com/Ryshard" target="_blank" class="github">GitHub</a> <a href="https://gist.github.com/Ryshard" target="_blank" class="gist">Gist</a> </nav> <br /> <nav class="social primary"> <a href="https://twitter.com/Azaqi" target="_blank" class="twitter">Twitter</a> <a href="https://www.facebook.com/gabriel.garus" target="_blank" class="facebook">FaceBook</a> <a href="https://www.strava.com/athletes/5574105" target="_blank" class="strava">Strava</a> <a href="http://boinc.netsoft-online.com/e107_plugins/boinc/get_user.php?cpid=33728a38745130c51f53259c56a1fdf3&html=1" target="_blank" class="wow">seti@home</a> </nav> </div> </footer>
 <script>
-  function ffDomLoadedScripts() {
 
+  function expanseItem (item) {
+    const btn = item.querySelector('button');
+    const info = item.querySelector('.item-info');
+
+    btn.addEventListener('click', () => {
+      info.classList.toggle('open');
+      item.classList.toggle('open');
+    });
+  }
+
+  function expanseItems() {
     const expertiseItems = document.querySelectorAll('.expertise-item');
+    if(!expertiseItems || !expertiseItems.length) {
+      return null;
+    }
+    expertiseItems.forEach(expanseItem);
+  }
 
-    expertiseItems.forEach((item) => {
-      const btn = item.querySelector('button');
-      const info = item.querySelector('.item-info');
+  function clipBoardEmail() {
+    const myEmail = document.getElementById('myEmail');
+    if (!myEmail) {
+      return null;
+    }
 
-      btn.addEventListener('click', () => {
-        info.classList.toggle('open');
-        item.classList.toggle('open');
-      });
+    const btn = myEmail.querySelector('button');
+    const email = myEmail.querySelector('p').innerHTML;
+
+    btn.addEventListener('click', () => {
+      const ghost = document.createElement('input');
+      ghost.setAttribute('type', 'text');
+      ghost.value = email;
+      ghost.style.opacity = 0;
+      myEmail.appendChild(ghost);
+      
+      ghost.select();
+      ghost.setSelectionRange(0, 99999); /*For mobile devices*/
+      /* Copy the text inside the text field */
+      document.execCommand("copy");
+      myEmail.removeChild(ghost);
     });
 
+  }
+  function ffDomLoadedScripts() {
+    expanseItems();
+    clipBoardEmail();
   }
 
   document.addEventListener('DOMContentLoaded', ffDomLoadedScripts);

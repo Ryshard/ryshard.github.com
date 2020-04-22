@@ -138,3 +138,37 @@ a {
 .item-info ul li { 
   padding: $space-xs 0;
 }
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.email-link, .email-text {
+  margin-right: $space-s;
+}
+
+.email-text {
+  font-size: 14px;
+  @include mq(360px) {
+    font-size: 16px;
+  }
+}
+
+.email-copy {
+  flex-basis: 100%;
+  width: 100%;
+  flex-grow: 1;
+  color: silver;
+  border: solid 1px silver;
+  padding: $space-xs;
+  border-radius: 3px;
+
+  @include mq(500px) {
+    flex-basis: auto;
+    flex-grow: 0;
+    width: auto;
+    margin-left: auto;
+  }
+}
