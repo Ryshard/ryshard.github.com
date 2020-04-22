@@ -30,6 +30,7 @@ h1, h2 {
   margin-bottom: $space-l;
   border-bottom: solid 1px #666;
   position: relative;
+  background-color: darken($bg-color, 3%);
 
 
   h1 {
@@ -93,7 +94,8 @@ a {
   width: 100%;
   border: none;
   color: #666;
-  padding: $space-s;
+  padding: $space-m;
+  padding-left: $space-m;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -170,5 +172,103 @@ a {
     flex-grow: 0;
     width: auto;
     margin-left: auto;
+  }
+}
+
+.divider {
+  border-bottom: solid 1px #666;
+  width: 100%;
+  display: block;
+  position: relative; 
+  margin: $space-m auto;
+
+  &:after, &:before {
+    content: '';
+    @extend .ball;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 20px;
+    height: 20px;
+  }
+
+  &:before {
+    border: solid 10px $bg-color;
+    width: 60px;
+  }
+}
+
+
+.cta-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.linkedin-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.svg.linkedin {
+  width: 40px;
+  height: 40px;
+  fill: #666;
+  &:hover {
+    fill: lighten(#666, 10%);
+  }
+}
+.cv-link {
+  height: 40px;
+  color: $bg-color;
+  background-color: #666;
+  border-radius: 5px;
+  padding: 0 15px;
+  line-height: 40px;
+  text-decoration: none;
+  &:hover {
+    background-color: lighten(#666, 10%);
+  }
+}
+
+.gh-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+  & svg {
+    fill: #666;
+    &:hover {
+      fill: lighten(#666, 10%);
+    }
+  }
+}
+
+.footer {
+  border-top: solid 1px #666;
+  margin-top: $space-l;
+  background-color: darken($bg-color, 3%);
+  .content {
+    padding: $space-m;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+  }
+  .social a {
+    color: #999;
+    margin-right: $space-s;
+    text-decoration: none;
+  }
+
+  .ball {
+    bottom: auto;
+    top: 0;
+    transform: translateY(-50%);
+    right: 24px;
+    left: auto;
   }
 }
