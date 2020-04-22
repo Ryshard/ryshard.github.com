@@ -1,0 +1,33 @@
+.about {
+  color: #666;
+  text-align: center;
+  p {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .quote {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include mq(400px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .info {
+      flex-basis: 60%;
+    }
+    img {
+      flex-basis: 30%;
+      width: auto;
+    }
+  }
+}

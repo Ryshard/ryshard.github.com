@@ -29,23 +29,6 @@ layout: main
     <li>
       {% capture itemInfo %}
       <ul>
-        <li>custom templates (php)</li>
-        <li>optimisation</li>
-        <li>WooCommerce</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="WordPress" info=itemInfo lastBall="true" %}
-    </li>
-  </ul>
-  
-  <br /><div class="divider"></div><br />
-
-  <h3><em>Other:</em></h3>
-  <br />
-  <ul class="expertise">
-    <li>
-      {% capture itemInfo %}
-      <ul>
         <li>@testing-library/react</li>
         <li>enzyme.js</li>
         <li>sinon.js</li>
@@ -58,6 +41,24 @@ layout: main
       {% endcapture %}
       {% include expertise.html text="Automated Testing" info=itemInfo %}
     </li>
+    <li>
+      {% capture itemInfo %}
+      <ul>
+        <li>custom templates (php)</li>
+        <li>optimisation</li>
+        <li>WooCommerce</li>
+      </ul>
+      {% endcapture %}
+      {% include expertise.html text="WordPress" info=itemInfo lastBall="true" %}
+    </li>
+  </ul>
+  
+  <br /><div class="divider"></div><br />
+
+  <h3><em>Other:</em></h3>
+  
+  <ul class="expertise other">
+   
     <li>
       {% capture itemInfo %}
       <ul>
@@ -110,7 +111,33 @@ layout: main
   <div id="myEmail" class="contact-email">
     <a href="mailto:gabriel.garus@protonmail.com" class="email-link"><div class="envelope"></div></a>
     <p itemprop="email" class="email-text">gabriel.garus@protonmail.com</p>
-    <button class="email-copy" title="copy to clipboard">copy email ( ctrl+c )</button>
+    <button class="email-copy" title="copy to clipboard">
+      <span class="mobile-only">copy</span>
+      <span class="tablet-only">copy email ( ctrl+c )</span>
+      <span class="desktop-only">copy email to clipboard ( ctrl+c )</span>
+    </button>
   </div>
 
+  <br /><div class="divider"></div><br />
+  <h3>About</h3>
+  <div class="about">
+    <div class="info">
+      <p class="text">
+        Born in Warsaw. <br />
+        Based in Dublin. <br />
+        Available worldwide. <br />
+      </p>
+      <p>
+        Started as hard-core wordpress/php developer. <br />
+        Currently devoted to React.js and modern javaScript. <br />
+        Always open to new ideas. 
+      </p>
+      <div class="line"></div>
+      <p class="quote">
+        <em>“A mind is like a parachute. It doesn't work if it is not open.”</em> <br />
+          - Frank Zappa 
+      </p>
+    </div>
+    <img src="https://gabrielgarus.s3-eu-west-1.amazonaws.com/img/gabriel-in-snow.jpg" alt="gabriel garus" title="gabriel garus" />
+  </div>
 </div>

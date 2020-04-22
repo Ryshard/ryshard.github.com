@@ -1,0 +1,22 @@
+.main-header {
+  width: 100%;
+  overflow: visible;
+  max-width: 100%;
+  margin-bottom: $space-l;
+  border-bottom: solid 1px #666;
+  position: relative;
+  background-color: darken($bg-color, 3%);
+
+
+  h1 {
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: $space-s;
+    text-align: right;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-align: right;
+  }
+}

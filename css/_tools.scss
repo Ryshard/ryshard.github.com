@@ -34,7 +34,11 @@ $img_path : '../../img/icons/';
 
 
 
-
+@mixin mq_small($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
 //--------------------------------------------------------------------------
 @mixin mq($breakpoint) {
     @media (min-width: $breakpoint) {
