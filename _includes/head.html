@@ -22,11 +22,12 @@
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}">
 <meta name="identifier-url" content="{{ site.url }}" />
-<meta name="robots" content="noindex,follow" />
+<meta name="robots" content="index,follow" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<!-- ulr: {{ site.url }}-->
 <!-- Open Graph -->
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
@@ -34,7 +35,7 @@
 <meta property="og:description" content="{{ pageDescription }}" />
 <meta property="og:url" content="{{ pageUrl }}" />
 <meta property="og:site_name" content="{{ pageTitle }}" />
-<meta property="og:image" content="{{seoImage | prepend: site.url }}">
+<meta property="og:image" content="{{ seoImage | prepend: site.url }}">
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -51,4 +52,4 @@
 <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
 
 </head>
-{% endcapture %}{{ headContent | normalize_whitespace }}
+{% endcapture %}{{ headContent }}
