@@ -56,4 +56,4 @@
 <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
 
 </head>
-{% endcapture %}{{ headContent }}
+{% endcapture %}{{ headContent | normalize_whitespace }}
