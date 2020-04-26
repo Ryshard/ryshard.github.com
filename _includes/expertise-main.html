@@ -1,0 +1,49 @@
+<ul class="expertise main">
+  <li>
+    {% capture itemInfo %}
+    <ul>
+      <li>React / redux</li>
+      <li>Vanilla</li>
+      <li>jQuery</li>
+    </ul>
+    {% endcapture %}
+    {% include expertise.html text="JavaScript" info=itemInfo %}
+  </li>
+  <li>
+    {% capture itemInfo %}
+    <ul>
+      <li>scss / sass - css pre-processor</li>
+      <li>Jekyll - static html generator</li>
+      <li>css3 / html5 best practices</li>
+    </ul>
+    {% endcapture %}
+    {% include expertise.html text="HTML / CSS" info=itemInfo %}
+
+  </li>
+  <li>
+    {% capture itemInfo %}
+    <ul>
+      <li>@testing-library/react</li>
+      <li>enzyme.js</li>
+      <li>sinon.js</li>
+      <li>es-lint</li>
+      <li>chai</li>
+      <li>mocha</li>
+      <li>selenium webdriver</li>
+      <li>cucumber</li>
+    </ul>
+    {% endcapture %}
+    {% include expertise.html text="Automated Testing" info=itemInfo %}
+  </li>
+  <li>
+    {% capture itemInfo %}
+    <ul>
+      <li>custom templates (php)</li>
+      <li>optimisation</li>
+      <li>WooCommerce</li>
+    </ul>
+    {% endcapture %}
+    {% include expertise.html text="WordPress" info=itemInfo lastBall="true" %}
+  </li>
+</ul>
+{% assign itemInfo = null %}

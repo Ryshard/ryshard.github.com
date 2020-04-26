@@ -4,140 +4,23 @@ layout: main
 <div class="content">
   <h2><em>Expertise:</em></h2>
   <br />
-  <ul class="expertise main">
-    <li>
-      {% capture itemInfo %}
-      <ul>
-        <li>React / redux</li>
-        <li>Vanilla</li>
-        <li>jQuery</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="JavaScript" info=itemInfo %}
-    </li>
-    <li>
-      {% capture itemInfo %}
-      <ul>
-        <li>scss / sass - css pre-processor</li>
-        <li>Jekyll - static html generator</li>
-        <li>css3 / html5 best practices</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="HTML / CSS" info=itemInfo %}
+  {% include expertise-main.html%}
 
-    </li>
-    <li>
-      {% capture itemInfo %}
-      <ul>
-        <li>@testing-library/react</li>
-        <li>enzyme.js</li>
-        <li>sinon.js</li>
-        <li>es-lint</li>
-        <li>chai</li>
-        <li>mocha</li>
-        <li>selenium webdriver</li>
-        <li>cucumber</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="Automated Testing" info=itemInfo %}
-    </li>
-    <li>
-      {% capture itemInfo %}
-      <ul>
-        <li>custom templates (php)</li>
-        <li>optimisation</li>
-        <li>WooCommerce</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="WordPress" info=itemInfo lastBall="true" %}
-    </li>
-  </ul>
-  
   <br /><div class="divider"></div><br />
 
   <h3><em>Other:</em></h3>
+  {% include expertise-other.html%}
+    
+  <br /><div class="divider"></div><br />
+
+  {% include cta-links.html%}
+
+  <br /><div class="divider"></div><br />
+
+  {% include contact.html %}
+
+  <br /><div class="divider"></div><br />
   
-  <ul class="expertise other">
-   
-    <li>
-      {% capture itemInfo %}
-      <ul>
-        <li>git (git-flow) / gitHub</li>
-        <li>gitLab</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="Version control" info=itemInfo %}
-    </li>
-    <li>
-      {% capture itemInfo %}
-      <ul>
-        <li>CircleCi</li>
-        <li>gitLab pages pipeline</li>
-        <li>gitHub pages pipeline</li>
-        <li>AWS CodeDeploy</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="CI/CD pipelines" info=itemInfo %}
-    </li>
-    <li>
-      {% capture itemInfo %}
-      <ul>
-        <li>optimizing react components for best performance</li>
-        <li>optimizing page performance</li>
-        <li>SEO best practices</li>
-      </ul>
-      {% endcapture %}
-      {% include expertise.html text="Optimisations" info=itemInfo lastBall="true" %}
-    </li>
-  </ul>
-
-  <br /><div class="divider"></div><br />
-
-  <div class="cta-links">
-    <a class="linkedin-link" href="https://www.linkedin.com/in/gabriel-garus-8891a333" target="_blank">
-      {% include svg/linkedin.svg %}
-    </a>
-    <a class="gh-link" href="https://github.com/Ryshard" target="_blank">
-      {% include svg/githublogo.svg %}
-    </a>
-    <a class="cv-link" href="https://gabrielgarus.s3-eu-west-1.amazonaws.com/docs/cv/gabriel-garus-2020-v71.pdf" target="_blank">
-      Download my cv (pdf)
-    </a>
-  </div>
-
-  <br /><div class="divider"></div><br />
-
-  <h3>Contact:</h3>
-  <div id="myEmail" class="contact-email">
-    <a href="mailto:gabriel.garus@protonmail.com" class="email-link"><div class="envelope"></div></a>
-    <p itemprop="email" class="email-text">gabriel.garus@protonmail.com</p>
-    <button class="email-copy" title="copy to clipboard">
-      <span class="mobile-only">copy</span>
-      <span class="tablet-only">copy email ( ctrl+c )</span>
-      <span class="desktop-only">copy email to clipboard ( ctrl+c )</span>
-    </button>
-  </div>
-
-  <br /><div class="divider"></div><br />
-  <h3>About</h3>
-  <div class="about">
-    <div class="info">
-      <p class="text">
-        Born in Warsaw. <br />
-        Based in Dublin. <br />
-        Available worldwide. <br />
-      </p>
-      <p>
-        Started as hard-core wordpress/php developer. <br />
-        Currently devoted to React.js and modern javaScript. <br />
-        Always open to new ideas. 
-      </p>
-      <div class="line"></div>
-      <p class="quote">
-        <em>“A mind is like a parachute. It doesn't work if it is not open.”</em> <br />
-          - Frank Zappa 
-      </p>
-    </div>
-    <img src="https://gabrielgarus.s3-eu-west-1.amazonaws.com/img/gabriel-in-snow.jpg" loading="lazy" alt="gabriel garus" title="gabriel garus" />
-  </div>
+  {% include about.html %}
+  
 </div>
