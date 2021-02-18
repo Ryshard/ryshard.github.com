@@ -1,0 +1,41 @@
+<head>
+  <link
+    rel="dns-prefetch"
+    href="https://gabrielgarus.s3-eu-west-1.amazonaws.com/"
+  />
+  <link rel="dns-prefetch" href="http://www.linkedin.com/" />
+
+  <meta charset="utf-8" />
+  <title>pageTitle</title>
+  <meta name="description" content="{{ pageDescription }}" />
+  <meta name="identifier-url" content="{{ site.url }}" />
+  <meta name="robots" content="index,follow" />
+
+  <meta
+    name="google-site-verification"
+    content="2jMqtJKHWbtJI0laHDe4a9YwXnNG7_JYujABTtqq_tw"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="en" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ pageTitle }}" />
+  <meta property="og:description" content="{{ pageDescription }}" />
+  <meta property="og:url" content="{{ pageUrl }}" />
+  <meta property="og:site_name" content="{{ pageTitle }}" />
+  <meta property="og:image" content="{{ seoImage | prepend: site.url }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <link rel="stylesheet" href="https://ryshard.github.io/css/stylus.css" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ pageTitle }}" />
+  <meta name="twitter:image" content="{{ seoImage | prepend: site.url }}" />
+  <meta name="twitter:description" content="{{ pageDescription }}" />
+  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+</head>

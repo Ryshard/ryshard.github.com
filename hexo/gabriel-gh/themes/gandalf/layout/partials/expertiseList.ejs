@@ -1,0 +1,7 @@
+<ul class="<%= className %>">
+  <% for(var i=0; i < areas.length; i++) { %>
+    <li>
+      <%- partial('expertise', { text : areas[i].title, items: areas[i].items, lastBall: (i === areas.length - 1) }) %>
+    </li>
+  <% } %>
+</ul>

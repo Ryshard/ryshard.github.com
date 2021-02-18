@@ -6,7 +6,9 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "hexo-cli": "^4.2.0"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "jekyll serve",
