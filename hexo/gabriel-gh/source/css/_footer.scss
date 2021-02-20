@@ -1,0 +1,27 @@
+.footer {
+  border-top: solid 1px #666;
+  margin-top: $space-l;
+  background-color: darken($bg-color, 3%);
+  .content {
+    padding: $space-m;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+  }
+  .social a {
+    color: #999;
+    margin-right: $space-s;
+    text-decoration: none;
+  }
+
+  .ball {
+    bottom: auto;
+    top: 0;
+    transform: translateY(-50%);
+    right: 24px;
+    left: auto;
+  }
+}

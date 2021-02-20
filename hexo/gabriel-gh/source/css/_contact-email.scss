@@ -1,0 +1,40 @@
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  @include mq_small(352px) {
+    flex-wrap: wrap;
+    .email-copy {
+      width: 100%;
+      flex-basis: 100%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.email-link, .email-text {
+  margin-right: $space-s;
+}
+
+.email-text {
+  font-size: 14px;
+  @include mq(500px) {
+    font-size: 16px;
+  }
+}
+
+.email-copy {
+  color: silver;
+  border: solid 1px silver;
+  padding: $space-xs;
+  border-radius: 3px;
+  overflow: hidden;
+  width: auto;
+  margin-left: auto;
+  
+  &.hidden {
+    transition: all 0.3s;
+    opacity: 0.5;
+  }
+}
