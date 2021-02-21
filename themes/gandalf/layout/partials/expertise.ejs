@@ -1,0 +1,14 @@
+<div class="expertise-item">
+  <% if(lastBall){ %>
+  <div class="ball last"></div>
+  <% } %>
+  <button><%= text %><span class="chevron bottom"></span></button>
+  <div class="item-info">
+    <ul>
+      <% for(var i=0; i < items.length; i++) { %>
+      <li><%= items[i] %></li>
+      <% } %>
+    </ul>
+  </div>
+  <div class="ball"></div>
+</div>
