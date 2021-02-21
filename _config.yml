@@ -108,10 +108,10 @@ theme: gandalf
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/Ryshard/ryshard.github.com
-  branch: master
+# deploy:
+#   type: git
+#   repo: https://github.com/Ryshard/ryshard.github.com
+#   branch: master
 
 # https://github.com/mamboer/hexo-filter-cleanup
 hfc_useref:
