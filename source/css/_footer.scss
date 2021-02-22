@@ -11,10 +11,21 @@
     font-weight: normal;
     color: #999;
   }
+
+  .social {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
   .social a {
     color: #999;
-    margin-right: $space-s;
+    margin: $space-s $space-s 0 0;
+    display: inline-block;
     text-decoration: none;
+    @include mq(420px) {
+      display: inline;
+    }
   }
 
   .ball {
