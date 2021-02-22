@@ -18,11 +18,11 @@
 .expertise-item button {
   background: transparent;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   border: none;
   color: #666;
-  padding: $space-m;
+  padding: 20px;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -53,7 +53,7 @@
   background-color: lighten(#666, 40%);
 }
 
-.ball.last { 
+.ball.last {
   top: auto;
   bottom: 0;
   transform: translateY(50%);
@@ -68,6 +68,6 @@
   padding-bottom: $space-s;
 }
 
-.item-info ul li { 
+.item-info ul li {
   padding: $space-xs 0;
 }
