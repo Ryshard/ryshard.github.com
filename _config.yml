@@ -127,6 +127,12 @@ hfc_js:
 hfc_css:
   enable: false
 
+hfc_img:
+  enable: true
+
+hfc_favicons:
+  enable: true
+
 # https://www.npmjs.com/package/hexo-renderer-sass
 node_sass:
   outputStyle: compressed
